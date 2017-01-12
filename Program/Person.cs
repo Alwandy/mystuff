@@ -11,6 +11,7 @@ namespace Program
         public string FirstName {get; set; }
         public string LastName {get; set;}
         public string dob { get; set; }
+        public int DepartmentId { get; set; }
 
         /*
          *@params null
