@@ -10,6 +10,10 @@ namespace Program
     {
         static void Main(string[] args)
         {
+            /* 
+            * Create a person object through Person class and calling that object person1
+            * Then set the person FirstName, LastName and Date of birth (DOB)
+            **/
             Person person1 = new Person();
             person1.FirstName = "Julian";
             person1.LastName = "Alwandy";
