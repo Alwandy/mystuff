@@ -1,0 +1,10 @@
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\bin\Debug\netcoreapp1.1\UKSF.deps.json
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\bin\Debug\netcoreapp1.1\UKSF.runtimeconfig.json
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\bin\Debug\netcoreapp1.1\UKSF.runtimeconfig.dev.json
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\bin\Debug\netcoreapp1.1\UKSF.dll
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\bin\Debug\netcoreapp1.1\UKSF.pdb
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\obj\Debug\netcoreapp1.1\UKSF.csprojResolveAssemblyReference.cache
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\obj\Debug\netcoreapp1.1\UKSF.AssemblyInfo.cs
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\obj\Debug\netcoreapp1.1\UKSF.dll
+c:\users\v-jualwa\documents\visual studio 2017\Projects\UKSF\UKSF\obj\Debug\netcoreapp1.1\UKSF.pdb

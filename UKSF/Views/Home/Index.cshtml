@@ -1,0 +1,9 @@
+﻿@model UKSF.Models.MainViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    @foreach(News news in Model.news)
+    {
+        @news.Title
+    }
