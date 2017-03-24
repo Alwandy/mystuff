@@ -6,9 +6,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     width: 100%;
-    position:fixed;
+    position:absolute;
     z-index: 1;
-    height: 88%;
+    height: 100%;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -39,6 +39,7 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    padding-top:300px;
 }
 
 header .intro-text .skills {
