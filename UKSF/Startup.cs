@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using UKSF.Data;
 using UKSF.Models;
 using UKSF.Services;
+using UKSF.Helpers;
 
 namespace UKSF
 {
@@ -55,7 +56,7 @@ namespace UKSF
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, ApplicationDbContext context)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -83,6 +84,7 @@ namespace UKSF
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            DBInitializer.Initialize(context);
         }
     }
 }
