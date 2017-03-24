@@ -35,9 +35,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Posts</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">About Us</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Join Us</a></li>
+                    <li><a href="@Url.Action("Index","Home")#News">News</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Joinus">Join Us</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Media</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">FAQs</a></li>
                 </ul>
@@ -72,7 +72,7 @@
                         <div class="col-md-2 col-sm-6 paddingtop-bottom">
                             <h6 class="heading7">GENERAL LINKS</h6>
                             <ul class="footer-ul">
-                                <li><a href="#"> Posts</a></li>
+                                <li><a href="@Url.Action("Index","Home")#News> News</a></li>
                                 <li><a href="#"> About us</a></li>
                                 <li><a href="#"> Join us</a></li>
                                 <li><a href="#"> Media</a></li>

@@ -32,10 +32,8 @@ namespace UKSF.Controllers
             return View(model); // Return view with model
         }
 
-        public IActionResult About()
+        public IActionResult Joinus()
         {
-            ViewData["Message"] = "N/A";
-
             return View();
         }
 
@@ -45,7 +43,10 @@ namespace UKSF.Controllers
 
             return View();
         }
-
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Error()
         {
             return View();
