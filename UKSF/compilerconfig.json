@@ -4,7 +4,7 @@
     "inputFile": "Resources/css/site.scss"
   },
   {
-    "outputFile": "wwwroot/js/site.es5.js",
+    "outputFile": "wwwroot/js/site.min.js",
     "inputFile": "Resources/js/site.js"
   }
 ]
