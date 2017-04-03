@@ -1,0 +1,4 @@
+﻿BusStopLatest stop {StopNumber}
+BusStopLatest next bus for stop {StopNumber}
+BusStopLatest next bus {StopNumber}
+BusStopLatest bus {StopNumber}

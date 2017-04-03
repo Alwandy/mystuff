@@ -1,0 +1,17 @@
+﻿{
+  "intents": [
+    {
+      "intent": "BusStopLatest",
+      "slots": [
+        {
+          "name": "StopNumber",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+

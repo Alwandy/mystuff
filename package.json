@@ -1,0 +1,9 @@
+{
+  "name": "dublin-bus-alexa",
+  "version": "0.0.0",
+  "description": "DublinBusAlexa",
+  "main": "app.js",
+  "author": {
+    "name": "v-jualwa"
+  }
+}
