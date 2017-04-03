@@ -136,6 +136,8 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.njspro
+*.zip
 
 # Chutzpah Test files
 _Chutzpah*
