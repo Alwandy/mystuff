@@ -8,6 +8,24 @@
           "type": "AMAZON.NUMBER"
         }
       ]
+    },
+    {
+      "intent": "BusStopSave",
+      "slots": [
+        {
+          "name": "StopNumber",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "BusStopFavorite",
+      "slots": [
+        {
+          "name": "StopNumber",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
     }
   ]
 }

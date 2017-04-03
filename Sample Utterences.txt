@@ -2,3 +2,13 @@
 BusStopLatest next bus for stop {StopNumber}
 BusStopLatest next bus {StopNumber}
 BusStopLatest bus {StopNumber}
+
+BusStopSave save favorite busstop {StopNumber}
+BusStopSave save favorite bus stop {StopNumber}
+BusStopSave save bus stop {StopNumber}
+BusStopSave save busstop {StopNumber}
+
+BusStopFavorite favorite busstop
+BusStopFavorite favorite bus stop
+BusStopFavorite next favorite busstop
+BusStopFavorite next favorite bus stop

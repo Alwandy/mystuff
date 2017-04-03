@@ -1,4 +1,7 @@
 ﻿// Helpers
+var https = require('https');
+var MongoClient = require('mongodb').MongoClient;
+
 buildSpeechletResponse = function (outputText, shouldEndSession) {
 
   return {
@@ -19,5 +22,3 @@ generateResponse = function (speechletResponse, sessionAttributes) {
         response: speechletResponse
     }
 }
-
-
