@@ -1,0 +1,13 @@
+﻿@import 'header';
+@import 'footer';
+@import 'navigation';
+@import 'articles';
+@import 'applicationform';
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #636b6f;
+}
