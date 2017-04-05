@@ -7,10 +7,8 @@ import { JoinusComponent } from './joinus/joinus.component';
 import { LoginComponent } from './login/login.component';
 import { HttpModule, JsonpModule } from '@angular/http';
 
-import { AUTH_PROVIDERS }      from 'angular2-jwt';
 @NgModule({
   imports:      [ BrowserModule, AppRoutingModule, HttpModule, JsonpModule ],
-  providers: [AUTH_PROVIDERS],
   declarations: [ AppComponent, NewsComponent, JoinusComponent, LoginComponent ],
   bootstrap:    [ AppComponent, LoginComponent]
 })
