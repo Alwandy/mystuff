@@ -1,9 +1,6 @@
-var express    = require('express'); 
-const router = express.Router();
-var defaultAPIname = require("../core/apiname");
-
-/* GET api listing. */
-router.get("/test", (req, res) => {
-	res.send("test works");
-});
-module.exports = router;
+module.exports =  function(controllerName, router){
+	router.get(controllerName, (req, res) => {
+		res.send("test works");
+	});
+	return router;
+};
