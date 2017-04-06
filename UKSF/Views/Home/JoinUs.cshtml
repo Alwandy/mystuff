@@ -1,0 +1,274 @@
+﻿@{
+    ViewData["Title"] = "Application form";
+}<br />
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container">
+        <div class="col-md-6" id="formwrapperbackground">
+            <h1>ERROR 404</h1>
+            <p>YOU ALREADY ARE A MEMBER OF UKSF</p>
+        </div>
+    </div>
+}
+else
+{
+<div class="container">
+    <div class="row" id="formwrapperbackground">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                    <h1 class="title-widget-sidebar" style="font-size:30px;">Application - UKSF</h1>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="firstname">Firstname</label>
+                        <div class="col-md-4">
+                            <input id="firstname" name="firstname" type="text" placeholder="John" class="form-control input-md" required="">
+                            <span class="help-block">Write your firstname</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="lastname">Lastname</label>
+                        <div class="col-md-4">
+                            <input id="lastname" name="lastname" type="text" placeholder="Doe" class="form-control input-md" required="">
+                            <span class="help-block">Write your surname</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="steamurl">Steam URL</label>
+                        <div class="col-md-4">
+                            <input id="steamurl" name="steamurl" type="text" placeholder="www.steamid.co.uk/profile/76561198071063189" class="form-control input-md" required="">
+                            <span class="help-block">e.g. www.steamid.co.uk/profile/76561198071063189 (We need this to contact you, please ensure it is correct)</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="email">Email Address</label>
+                        <div class="col-md-4">
+                            <input id="email" name="email" type="text" placeholder="john.doe@live.co.uk" class="form-control input-md" required="">
+                            <span class="help-block">e.g. uksfrecruitment@gmail.com (We may use this to contact you if we cannot reach you via Steam)</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="DOB">Date of birth</label>
+                        <div class="col-md-4">
+                            <input id="DOB" name="DOB" type="text" placeholder="dd/mm/yy" class="form-control input-md" required="">
+                            <span class="help-block">Write your date of birth</span>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="UnitBefore">Have you been in an ArmA Milsim Unit before?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="UnitBefore-0">
+                                    <input type="radio" name="UnitBefore" id="UnitBefore-0" value="Yes" checked="checked">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="UnitBefore-1">
+                                    <input type="radio" name="UnitBefore" id="UnitBefore-1" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="militaryexperience">Do you have any military background or experience? (Cadet doesn</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="militaryexperience-0">
+                                    <input type="radio" name="militaryexperience" id="militaryexperience-0" value="Yes" checked="checked">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="militaryexperience-1">
+                                    <input type="radio" name="militaryexperience" id="militaryexperience-1" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="units">Desired unit you want to join</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="units-0">
+                                    <input type="radio" name="units" id="units-0" value="1st Battalion The Parachute Regiment (GROUND)" checked="checked">
+                                    1st Battalion The Parachute Regiment (GROUND)
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="units-1">
+                                    <input type="radio" name="units" id="units-1" value="Joint Special Forces Aviation Wing (AIR)">
+                                    Joint Special Forces Aviation Wing (AIR)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Checkboxes -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="1pararoles">Desired role in 1PARA. (If applies)</label>
+                        <div class="col-md-4">
+                            <div class="checkbox">
+                                <label for="1pararoles-0">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-0" value="Rifleman">
+                                    Rifleman
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-1">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-1" value="GPMG/LMG Gunner">
+                                    GPMG/LMG Gunner
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-2">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-2" value="AT Specialist">
+                                    AT Specialist
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-3">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-3" value="Marksman">
+                                    Marksman
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-4">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-4" value="Combat Medic">
+                                    Combat Medic
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-5">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-5" value="Leadership">
+                                    Leadership
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="1pararoles-6">
+                                    <input type="checkbox" name="1pararoles" id="1pararoles-6" value="RTO/JTAC">
+                                    RTO/JTAC
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Checkboxes -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="jsfawroles">Desired Squadron you wish to be considered for in JSFAW. (If Applies)</label>
+                        <div class="col-md-4">
+                            <div class="checkbox">
+                                <label for="jsfawroles-0">
+                                    <input type="checkbox" name="jsfawroles" id="jsfawroles-0" value="7 Squadron - Transport">
+                                    7 Squadron - Transport
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="jsfawroles-1">
+                                    <input type="checkbox" name="jsfawroles" id="jsfawroles-1" value="656 Squadron - Apache">
+                                    656 Squadron - Apache
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="jsfawroles-2">
+                                    <input type="checkbox" name="jsfawroles" id="jsfawroles-2" value="6 Squadron - Fixed Wing">
+                                    6 Squadron - Fixed Wing
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="NCO">Do you wish to be considered for NCO/Leadership Roles within UKSF? *</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="NCO-0">
+                                    <input type="radio" name="NCO" id="NCO-0" value="Yes" checked="checked">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="NCO-1">
+                                    <input type="radio" name="NCO" id="NCO-1" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="SpecOps">Do you wish to be considered for Specialised Forces Options within UKSF? *</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="SpecOps-0">
+                                    <input type="radio" name="SpecOps" id="SpecOps-0" value="Yes" checked="checked">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="SpecOps-1">
+                                    <input type="radio" name="SpecOps" id="SpecOps-1" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="summary">Summarise yourself</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="summary" name="summary">Give an overview of yourself and what you will bring to UKSF</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="skills">Do you have any specific skills that can aid the unit/community?</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="skills" name="skills">e.g. C++, Web design, Java, 3D Modelling, Mission Making etc.
+</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="google">If you found us on Google, what did you search for?</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="google" name="google">e.g. Arma UK clan, Arma milsim, Arma uk milsim etc</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="foundus">How did you find us?</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="foundus" name="foundus">e.g. Google, Steam, ArmaClans,, friend etc.</textarea>
+                        </div>
+                    </div>
+
+</fieldset>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div><br />
+}

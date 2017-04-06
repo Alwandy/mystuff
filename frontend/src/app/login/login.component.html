@@ -1,0 +1,5 @@
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#"(click)="auth.login()" *ngIf="!auth.authenticated()"><i class="fa fa-user" aria-hidden="true"></i> Welcome Guest, Login</a></li>
+  <li><a href="#"(click)="auth.logout()" *ngIf="auth.authenticated()"><i class="fa fa-window-close" aria-hidden="true"></i> Logout</a></li>
+</ul>
+{{auth.userProfile.user_id}}
