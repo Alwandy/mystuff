@@ -2,10 +2,6 @@
 // =============================================================================
 
 
-var mongoose   = require('mongoose');
-mongoose.connect(''); // connect to our database
-
-
 // call the packages we need
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
