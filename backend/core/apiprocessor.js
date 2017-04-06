@@ -9,14 +9,13 @@ var applyAPIDirectory = function(app){
 		else if (list == null){
 			return;
 		}
-		
 		for(var i=0; i<list.length; i++)
 		{
 			console.log(list[i]); 
-			var file = require("../api/" + list[i].replace(".js", ""));
-			file.applyAPI(app);
+			if(list[i].includes("Controller.js"))
+				app.use("/api", require("../api/" + list[i].replace(".js", "")));
 		}
 	});
 }
 
-module.exports = applyAPIDirectory;
+module.exports.applyAPIDirectory = applyAPIDirectory;
