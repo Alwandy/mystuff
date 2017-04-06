@@ -6,57 +6,47 @@ using Microsoft.AspNetCore.Mvc;
 using UKSF.Data;
 using UKSF.Models;
 using Microsoft.EntityFrameworkCore;
+using UKSF.Helpers;
 
 namespace UKSF.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-
-        /** 
-         *  CREATE CONNECTION TOWARDS DATABASE
+        /**
+         *  Make a constructor for HomeController 
          * 
-         * */
-        private readonly ApplicationDbContext _context;
-        public HomeController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-        /** 
-         * Method @GetNews
-         *  Return List @News.Title etc
-         * */
-        public List<UKSF.Models.News> GetNews()
-        {
-            return _context.News.ToList();
-        }
-
-        /*
-         * Method if visits example.com/ then view index.html 
-         * VIEW is HOME folder 
          **/
+        public HomeController(ApplicationDbContext context) : base(context)
+        {
+        }
+
+        /**
+         *  Make methods i.e Index then call the helpers you need for this controller
+         * */
         public IActionResult Index()
         {
             MainViewModel model = new MainViewModel(); // Initiate the Main model class
-            model.news = new List<News>(); // Initiate news as a List 
-            model.news = GetNews(); // Save whatever news is inside News function 
-            return View(model); // Return whole model
+            NewsHelper NewsHelpers = new NewsHelper(); // Initiate helpers 
+            model.news = new List<News> (); // Initiate news as a List 
+            model.news = NewsHelpers.GetNews(_context); // Save whatever news is inside News function 
+            return View(model); // Return view with model
         }
 
-        public IActionResult About()
+        public IActionResult Joinus()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "N/A";
 
             return View();
         }
-
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Error()
         {
             return View();
