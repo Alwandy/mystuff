@@ -15,13 +15,12 @@ var applyAPIDirectory = function(app, prefix, rootDir){
 	console.log("Initialising API directory '" + prefix + "' ...");
 	for(var i=0; i<files.length; i++)
 	{
-		console.log(files[i]); 
 		if(files[i].includes(controllerSuffix)){
 			var requireName = "../" + rootDir + files[i].replace(".js", "");
 			var apiName = "/"+files[i].replace(controllerSuffix, "");
 			require(requireName)(apiName, router);
 			
-			console.log(" - "+prefix+apiName);
+			console.log(" - "+prefix+apiName + " from file " + files[i]);
 		}
 		
 		app.use(prefix, router);
