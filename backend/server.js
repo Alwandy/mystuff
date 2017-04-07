@@ -14,7 +14,7 @@ var apiProcessor = require("./core/apiprocessor");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8080;        // set our port
+var port = process.env.PORT || 4070;        // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
