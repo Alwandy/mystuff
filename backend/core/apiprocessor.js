@@ -5,7 +5,7 @@ const router = express.Router();
 const controllerSuffix = "-controller.js";
 
 var applyAPIDirectory = function(app, prefix, rootDir){
-	var files = fs.readdirSync(rootDir);
+	var files = fs.readdirSync(path.join(__dirname, "../"+rootDir) );
 	
 	if (files == null){
 		return;
