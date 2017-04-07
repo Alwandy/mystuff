@@ -1,42 +1,27 @@
+// BASE SETUP
+// =============================================================================
 
-// Get dependencies
-const express = require('express');
-const path = require('path');
-const http = require('http');
-const bodyParser = require('body-parser');
 
-// Get our API routes
-const api = require('./server/routes/api');
+// call the packages we need
+var express    = require('express');        // call express
+var app        = express();                 // define our app using express
+var bodyParser = require('body-parser');
+var apiProcessor = require("./core/apiprocessor");
 
-const app = express();
 
-// Parsers for POST data
+// configure app to use bodyParser()
+// this will let us get the data from a POST
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
-// Point static path to dist
-app.use(express.static(path.join(__dirname, 'dist')));
+var port = process.env.PORT || 4070;        // set our port
 
-// Set our api routes
-app.use('/api', api);
+// ROUTES FOR OUR API
+// =============================================================================
+apiProcessor.applyAPIDirectory(app, "/api", "api/");
 
-// Catch all other routes and return the index file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
-});
-
-/**
- * Get port from environment and store in Express.
- */
-const port = process.env.PORT || '3000';
-app.set('port', port);
-
-/**
- * Create HTTP server.
- */
-const server = http.createServer(app);
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-server.listen(port, () => console.log(`API running on localhost:${port}`));
+// START THE SERVER
+// =============================================================================
+app.listen(port);
+console.log('');
+console.log('Server ready and listening on port ' + port);
