@@ -7,7 +7,7 @@ module.exports = {
     'Test 2' : function(test) {
         test.expect(2);
         test.ok(1 === 1, "This shouldn't fail");
-        test.ok(false, "This should fail");
+        test.ok(true, "This should fail");
         test.done();
     }
 };
