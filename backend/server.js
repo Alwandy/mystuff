@@ -14,15 +14,11 @@ var apiProcessor = require("./core/apiprocessor");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+var port = process.env.PORT || 4070;        // set our port
+
 // ROUTES FOR OUR API
 // =============================================================================
 apiProcessor.applyAPIDirectory(app, "/api", "api/");
-
-/**
- * Get port from environment and store in Express.
- */
-var port = process.env.PORT || 4070;
-app.set('port', port);
 
 // START THE SERVER
 // =============================================================================
