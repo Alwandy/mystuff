@@ -12,5 +12,6 @@
     "express": "^4.15.2",
     "body-parser": "~1.0.1",
 	"nodeunit": "0.10.0"
+	"mongodb": ""
   }
 }
