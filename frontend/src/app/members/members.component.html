@@ -1,0 +1,30 @@
+<br>
+<div class="container" *ngIf="auth.authenticated()">
+  <div class="row" id="formwrapperbackground">
+    <h2 class="title-widget-sidebar">// Welcome back {{user.fullname}}</h2>
+    <div class="row">
+    <h2 style="padding-left:15px">>>Profile</h2>
+    <div class="col-md-2">
+  <img src="http://placehold.it/150x150">
+    </div>
+    <div class="col-md-3">
+      <h3>Name: {{user.fullname}}</h3>
+      <h3>Rank: Corporal</h3>
+      <h3>Platoon: Firesupport Group</h3>
+    </div>
+    <div class="col-md-3">
+      <h3>Section: Pegasus 3</h3>
+      <h3>Status: Active</h3>
+    </div></div>
+    <div class="row" style="padding-left:15px">
+    <h2>>>Activities</h2>
+      <p>No operations available at this moment.</p>
+    </div>
+  </div>
+</div><br>
+
+<div class="container" *ngIf="!auth.authenticated()">
+  <div class="row" id="formwrapperbackground">
+    <h1 class="title-widget-sidebar">Please login to access members page</h1>
+  </div>
+</div><br>
