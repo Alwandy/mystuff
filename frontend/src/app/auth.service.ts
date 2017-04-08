@@ -8,17 +8,7 @@ declare var Auth0Lock: any;
 @Injectable()
 export class Auth {
   // Configure Auth0
-  lock = new Auth0Lock(myConfig.clientID, myConfig.domain, {
-    additionalSignUpFields: [{
-      name: "address",                              // required
-      placeholder: "enter your address",            // required
-      icon: "https://example.com/address_icon.png", // optional
-      validator: function(value) {                  // optional
-        // only accept addresses with more than 10 chars
-        return value.length > 10;
-      }
-    }]
-  });
+  lock = new Auth0Lock(myConfig.clientID, myConfig.domain, {});
 
   //Store profile object in auth class
   userProfile: any;
@@ -58,9 +48,8 @@ export class Auth {
   };
 
   public logout() {
-    // Remove token and profile from localStorage
+    // Remove token from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('profile');
-    this.userProfile = undefined;
   };
 }
