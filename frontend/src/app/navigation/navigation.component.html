@@ -1,0 +1,9 @@
+<ul class="nav navbar-nav navbar-nav-left">
+  <li><a href="/">Home</a></li>
+  <li><a href="/">News</a></li>
+  <li><a href="/joinus" *ngIf="!auth.authenticated()">Join us</a></li>
+  <li><a>About Us</a></li>
+  <li><a>Media</a></li>
+  <li><a>FAQs</a></li>
+  <li><a href="/members" *ngIf="auth.authenticated()">Members</a></li>
+</ul>
