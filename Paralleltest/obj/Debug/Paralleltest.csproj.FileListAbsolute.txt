@@ -1,0 +1,6 @@
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\bin\Debug\Paralleltest.exe.config
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\bin\Debug\Paralleltest.exe
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\bin\Debug\Paralleltest.pdb
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\obj\Debug\Paralleltest.csprojResolveAssemblyReference.cache
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\obj\Debug\Paralleltest.exe
+c:\users\v-jualwa\documents\visual studio 2015\Projects\Paralleltest\Paralleltest\obj\Debug\Paralleltest.pdb
